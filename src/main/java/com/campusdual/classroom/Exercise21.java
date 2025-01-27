@@ -29,9 +29,12 @@ public class Exercise21 {
   }
 
   public static void main(String[] args) {
-    printSet(createHashSet());
+    Set<String> hashSet = createHashSet();
+    addElementToSet(hashSet, "ELEMENT TEST");
+    printSet(hashSet);
     System.out.println();
-    printSet(createTreeSet());
+    Set<String> treeSet = createHashSet();
+    addElementToSet(treeSet, "ELEMENT TEST");
+    printSet(treeSet);
   }
-
 }
